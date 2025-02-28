@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Slider } from "@/components/ui/slider";
 import { Copy } from "lucide-react";
@@ -86,7 +86,9 @@ const ColorPaletteGenerator = () => {
               <Switch
                 id="neutral"
                 checked={showNeutralColors}
-                onCheckedChange={() => setShowNeutralColors((current) => !current)}
+                onCheckedChange={() =>
+                  setShowNeutralColors((current) => !current)
+                }
               />
               <Label htmlFor="neutral">Show neutral colors</Label>
             </div>
